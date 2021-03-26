@@ -1,36 +1,43 @@
-#titulo-principal{
+#titulo-principal {
     font-family: 'Ranchers', cursive;
     font-size: 50px;
-    color:  #EAA9C2;
+    color: #EAA9C2;
     font-weight: bold;
     ;
 }
-.cor-navbar{
+
+.cor-navbar {
     color: #333333;
 }
-.tamanho-fonte{
+
+.tamanho-fonte {
     font-size: 18px;
 }
-h1{
+
+h1 {
     /* Olá, somos o Psi.Aqui! */
-float: right;
-position: absolute;
-width: 569px;
-height: 109px;
-left: 166px;
-top: 313px;
+    float: right;
+    position: absolute;
+    width: 569px;
+    height: 109px;
+    left: 166px;
+    top: 313px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 56px;
+    /* or 127% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.01em;
+    color: #333333;
+}
 
-font-family: Inter;
-font-style: normal;
-font-weight: bold;
-font-size: 44px;
-line-height: 56px;
-/* or 127% */
-display: flex;
-align-items: center;
-letter-spacing: 0.01em;
-
-color: #333333;
-
+.estilo-titulo-h2 {
+    font-family: Inter;
+    font-size: 60px !important;
+    font-style: normal;
+    
 
 }
