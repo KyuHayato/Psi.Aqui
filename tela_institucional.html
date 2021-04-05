@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
             <a id="titulo-principal" style="font-size: 30px; font-weight: bold; color:  #EAA9C2" class="navbar-brand"
@@ -48,24 +48,39 @@
 
     <main>
         <!-- 
-                centralizar o texto
+                centralizar o texto (alustar o grid baseado no posicionamento predefinido)
             -->
-        <section class="d-flex justify-content-between posicao">
-            <article class="">
-                <h1>Olá, somos o Psi.Aqui!</h1>
-                <p>Uma plataforma de unificação de locais com psicologia acessivel desenvolvida por alunos
-                    do
-                    curso
-                    de graduação Sistemas de Informação da UNINASSAU Graças.</p>
-                <input type="button" value="Saiba Mais">
-            </article>
+        <section class="container">
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <section class="d-flex justify-content-between posicao">
+                        <article class="">
+                            <h1 class="mb-5">Olá, somos o Psi.Aqui!</h1>
+                            <p class="mb-4">Uma plataforma de unificação de locais com psicologia acessivel desenvolvida
+                                por alunos
+                                do
+                                curso
+                                de graduação Sistemas de Informação da UNINASSAU Graças.</p>
+                            <input type="button" value="Saiba Mais">
+                        </article>
+                    </section>
+                </div>
+
+                <div class="col-4">
+                    <aside class="d-flex justify-content-end">
+                        <figure>
+                            <img id="imagem-principal" src="img/1111-te.png" class="" alt="psicologa sentada">
+                        </figure>
+                    </aside>
+
+                </div>
+            </div>
         </section>
 
-        <aside class="d-flex justify-content-end">
-            <figure>
-                <img id="imagem-principal" src="img/1111-te.png" class="" alt="psicologa sentada">
-            </figure>
-        </aside>
+
+
+
+
         <!--
                 Ajustar o grid da section
              -->
@@ -82,28 +97,45 @@
 
         <section>
 
-            <figure class="">
-                <img src="img/Polygon 5.png" alt="figura poligon">
-            </figure>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <figure class="">
+                            <img src="img/Polygon 5.png" alt="figura poligon">
+                        </figure>
+                    </div>
+                    <div class="col">
 
-            <section>
-                <article class="d-flex justify-content-end">
-                    <h2>Depressão</h2>
-                    <p>
-                        Dados da Organização Mundial de Saúde mostram que a depressão foi registrada em todo o
-                        mundo.
-                        De acordo com a Organização Mundial de Saúde, o número de pessoas que sofrem de depressão e
-                        / ou
-                        transtornos de ansiedade aumentou quase 50% nas últimas décadas, de 416 milhões para 615
-                        milhões. Isso significa que cerca de 10% da população mundial é afetada por esse problema, e
-                        os
-                        transtornos mentais respondem por 30% das doenças não fatais registradas no mundo.
-                        Hoje em dia, a vida das pessoas está cada vez mais rápida, e o tempo para se cuidar e se
-                        dedicar
-                        à saúde e aos cuidados pessoais está cada vez mais difícil de determinar.
-                    </p>
-                </article>
-            </section>
+                        <section>
+                            <article class="">
+                                <h2>Depressão</h2>
+                                <p>
+                                    Dados da Organização Mundial de Saúde mostram que a depressão foi registrada em todo
+                                    o
+                                    mundo.
+                                    De acordo com a Organização Mundial de Saúde, o número de pessoas que sofrem de
+                                    depressão e
+                                    / ou
+                                    transtornos de ansiedade aumentou quase 50% nas últimas décadas, de 416 milhões para
+                                    615
+                                    milhões. Isso significa que cerca de 10% da população mundial é afetada por esse
+                                    problema, e
+                                    os
+                                    transtornos mentais respondem por 30% das doenças não fatais registradas no mundo.
+                                    Hoje em dia, a vida das pessoas está cada vez mais rápida, e o tempo para se cuidar
+                                    e se
+                                    dedicar
+                                    à saúde e aos cuidados pessoais está cada vez mais difícil de determinar.
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+
+
+
         </section>
 
         <section>
