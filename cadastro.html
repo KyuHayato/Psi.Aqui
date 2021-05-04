@@ -23,29 +23,43 @@
                 <main>
                     <div>
                         <img class="teste float-l" src="img/PsiAqui2.png" alt="PsiAqui2">
-                    </div>
-                    <h1 class="m-b-45">CADASTRO</h1>
-                    <section>
 
+                        <h1 class="m-b-45">CADASTRO</h1>
+
+                    </div>
+                    <section>
                         <div class="input-group mb-3">
                             <label for="nomeSobrenome">Nome e Sobrenome*</label>
                             <input class="inputCadastrar m-b-50" type="text" name="nomeSobrenome"
                                 placeholder="Nome e sobrenome">
 
                             <label for="emailCadastrar">Email*</label>
-                            <input class="inputCadastrar m-b-50" type="text" name="emailCadastrar" placeholder="Email">
-                            
-                            <label for="emailCadastrar">Genero*</label>
-                            <input class="inputCadastrar m-b-50" type="text" name="emailCadastrar" placeholder="Email">
-                            
-                            <label for="emailCadastrar">Data de Nascimento*</label>
-                            <input class="inputCadastrar m-b-50" type="text" name="emailCadastrar" placeholder="Email">
-                            
-                            <label for="emailCadastrar">Escolha uma senha*</label>
-                            <input class="inputCadastrar m-b-50" type="password" name="emailCadastrar" placeholder="Email">
-                            
-                            <label for="emailCadastrar">Confirmar senha*</label>
-                            <input class="inputCadastrar m-b-50" type="password" name="emailCadastrar" placeholder="Email">
+                            <input class="inputCadastrar m-b-50" type="email" name="emailCadastrar" placeholder="Email">
+
+                            <div class="flex-row">
+                                    <div class="flex-col-c m-l-70">
+                                    <label for="select">Sexo*</label>
+                                    <select name="select" id="genero" class="inputTeste">
+
+                                        <option value="valor0">Selecionar</option>
+                                        <option value="valor1">Feminino</option>
+                                        <option value="valor2">Masculino</option>
+
+                                    </select>
+                                </div>
+                                <div class="flex-col-c m-l-70">
+                                    <label for="dataNasc">Data de Nascimento*</label>
+                                    <input class="inputTeste m-b-50" type="date" name="dataNasc"
+                                        placeholder="Data-Nasc">
+                                </div>
+                            </div>
+                            <label for="senha">Escolha uma senha*</label>
+                            <input class="inputCadastrar m-b-50" type="password" name="senha"
+                                placeholder="********">
+
+                            <label for="conf-senha">Confirmar senha*</label>
+                            <input class="inputCadastrar m-b-50" type="password" name="conf-senha"
+                                placeholder="********">
 
                             <div class="container-login100-form-btn">
                                 <button class="login100-form-btn-cadastra">
