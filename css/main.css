@@ -207,7 +207,7 @@ iframe {
 }
 .cadastro{
   padding-top: 30px !important;
-  text-align: center !important;
+  
 }
 /*------------------------------------------------------------------
 [  ]*/
@@ -268,7 +268,7 @@ iframe {
 
   display: block;
   width: 90%;
-  background: green;
+  background: #e6e6e6;
   height: 50px;
   
   border-radius: 25px;
