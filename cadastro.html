@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <title>Psi Aqui - cadastro</title>
@@ -21,65 +21,67 @@
         <div class="container-login100 ">
             <div class="wrap-login100 cadastro">
                 <main>
-                    <div>
-                        <img class="teste float-l" src="img/PsiAqui2.png" alt="PsiAqui2">
-                        <img class="teste float-r" src="img/PsiAqui2.png" alt="PsiAqui2">
+                    <form method="get">
+                        <div>
+                            <img class="teste float-l" src="img/PsiAqui2.png" alt="PsiAqui2">
+                            <img class="teste float-r" src="img/PsiAqui2.png" alt="PsiAqui2">
 
-                        <h1 class="m-b-45 text-center fonte">CADASTRO</h1>
+                            <h1 class="m-b-45 text-center fonte">CADASTRO</h1>
 
-                    </div>
-                    <section class="flex-c-m">
-                        <div class="input-group mb-3 flex-col-m">
-                            <label for="nomeSobrenome">Nome e Sobrenome*</label>
-                            <input class="inputCadastrar m-b-50" type="text" name="nomeSobrenome"
-                                placeholder="Nome e sobrenome">
-
-                            <label for="emailCadastrar">Email*</label>
-                            <input class="inputCadastrar m-b-10 flex-col-m" type="email" name="emailCadastrar"
-                                placeholder="Email">
-
-                            <div class="flex-c-m">
-                                <div class="flex-col-m">
-                                    <label for="select">Genero*</label>
-                                    <select name="select" id="genero" class="inputTeste">
-
-                                        <option value="valor0">Selecionar</option>
-                                        <option value="valor1">Feminino</option>
-                                        <option value="valor2">Masculino</option>
-                                        <option value="valor3">OUtro</option>
-
-                                    </select>
-                                </div>
-                                <div class="flex-col-m m-t-50">
-                                    <label for="dataNasc">Data de Nascimento*</label>
-                                    <input class="inputTeste m-b-50" type="date" name="dataNasc"
-                                        placeholder="Data-Nasc">
-                                </div>
-                            </div>
-
-                            <label for="senha">Escolha uma senha*</label>
-                            <input class="inputCadastrar m-b-50 flex-col-m" type="password" name="senha"
-                                placeholder="********">
-
-                            <label for="conf-senha">Confirmar senha*</label>
-                            <input class="inputCadastrar m-b-50 flex-col-m" type="password" name="conf-senha"
-                                placeholder="********">
-
-
-                            <div class="container-login100-form-btn">
-                                <button class="login100-form-btn-cadastra">
-                                    Cadastre - se >
-                                </button>
-                            </div>
-
-
-                            <div class="text-center p-t-12">
-                                <a class="txt2" href="login.html">
-                                    Voltar
-                                </a>
-                            </div>
                         </div>
-                    </section>
+                        <section class="flex-c-m">
+                            <div class="input-group mb-3 flex-col-m">
+                                <label for="nomeSobrenome">Nome e Sobrenome*</label>
+                                <input class="inputCadastrar m-b-50" type="text" name="nomeSobrenome"
+                                    placeholder="Nome e sobrenome" data-nome>
+
+                                <label for="emailCadastrar">Email*</label>
+                                <input class="inputCadastrar m-b-10 flex-col-m" type="email" name="emailCadastrar"
+                                    placeholder="Email" data-email>
+
+                                <div class="flex-c-m">
+                                    <div class="flex-col-m">
+                                        <label for="select">Genero*</label>
+                                        <select name="select" id="genero" class="inputTeste">
+
+                                            <option value="valor0">Selecionar</option>
+                                            <option value="valor1">Feminino</option>
+                                            <option value="valor2">Masculino</option>
+                                            <option value="valor3">Outro</option>
+                                            <option value="valor3">Prefiro não Informar</option>
+
+                                        </select>
+
+                                    </div>
+                                    <div class="flex-col-m m-t-50">
+                                        <label for="dataNasc">Data de Nascimento*</label>
+                                        <input class="inputTeste m-b-50" type="date" name="dataNasc"
+                                            placeholder="Data-Nasc" data-nasc>
+                                    </div>
+                                </div>
+
+                                <label for="senha">Escolha uma senha*</label>
+                                <input class="inputCadastrar m-b-50 flex-col-m" type="password" name="senha"
+                                    placeholder="********" data-senha>
+
+                                <label for="conf-senha">Confirmar senha*</label>
+                                <input class="inputCadastrar m-b-50 flex-col-m" type="password" name="conf-senha"
+                                    placeholder="********" data-senha-conf>
+
+                                <div class="container-login100-form-btn">
+                                    <button type="submit" class="login100-form-btn-cadastra" onclick="validaCadastro()">
+                                        Cadastre - se
+                                    </button>
+                                </div>
+
+                                <div class="text-center p-t-12">
+                                    <a class="txt2" href="login.html">
+                                        Voltar
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                    </form>
                 </main>
             </div>
         </div>
@@ -87,24 +89,18 @@
 
 
 
-
-    <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
-    <!--===============================================================================================-->
-    <script src="vendor/tilt/tilt.jquery.min.js"></script>
-    <script>
-        $('.js-tilt').tilt({
-            scale: 1.1
-        })
-    </script>
-    <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/select2/select2.min.js"></script>
+<script src="vendor/tilt/tilt.jquery.min.js"></script>
+<!--   <script>
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script> -->
+<!-- <script src="js/main.js"></script> -->
+<script src="js/validacoes.js"></script>
 
 </body>
-
 </html>

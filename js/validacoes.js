@@ -1,6 +1,4 @@
-function validaLogin(){
-    
-}
+
 function validaEmail(){
     if(document.getElementsByName('email') == ''){
         alert("email obrigatorio")
