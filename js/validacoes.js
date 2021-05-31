@@ -12,11 +12,15 @@ function validaSenha(){
 
 function validaLogin() {
 
-    if (document.querySelector("#teste2").value == '') {
-        alert('Insira um email valido, campo vazio')
+    if(document.querySelector('[name="pass"]').value ==""){
+        document.querySelector("#mensagemErro3").style.display = "block"
+    } else{
+        document.querySelector("#mensagemErro3").style.display = "none"
     }
-    if (document.querySelector("#teste").value == '') {
-        alert("senha obrigatoria")
+    if (document.querySelector('[name="email"]').value == '') {
+        document.querySelector("#mensagemErro2").style.display = "block"       
+    } else{
+        document.querySelector("#mensagemErro2").style.display = "none"       
     }
 }
 function validaCadastro() {
@@ -42,6 +46,47 @@ function validaCadastro() {
     
     }
 }
+function validaEmail(email){
+    let exp = /^([0-9a-zA-Z]+[-._+&amp;])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$/
+    if (!exp.test(email.value)) {
+       alert("email invalido")
+        return false;
+    } 
+    if (email.value == '') {
+        alert("esse campo é obrigatorio")
+        email.focus();
+        return false;
+    }  
+}
+function validaEmailLogin(email){
+    let exp = /^([0-9a-zA-Z]+[-._+&amp;])*[0-9a-zA-Z]+@([-0-9a-zA-Z]+[.])+[a-zA-Z]{2,6}$/
+    if (!exp.test(email.value)) {
+       document.querySelector("#mensagemErro").style.display = "block"
+       return false;
+    } else{
+        document.querySelector("#mensagemErro").style.display = "none"
+
+
+    }
+    if (email.value == '') {
+        document.querySelector("#mensagemErro2").style.display = "block"
+        email.focus();
+        return false;
+    }  else{
+        document.querySelector("#mensagemErro2").style.display = "none"
+    }
+}
+function validaSenhaLogin(senha){
+    if(senha.value ==""){
+        document.querySelector("#mensagemErro3").style.display = "block"
+    } else{
+        document.querySelector("#mensagemErro3").style.display = "none"
+    }
+}
+
+    
+    
+
 
 
 

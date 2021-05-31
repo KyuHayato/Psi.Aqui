@@ -37,7 +37,7 @@
 
                             <label for="emailCadastrar">Email*</label>
                             <input class="inputCadastrar m-b-10 flex-col-m" type="email" name="emailCadastrar"
-                                placeholder="Email" data-email>        
+                                placeholder="Email" data-email onchange="validaEmail(this)">        
 
                             <div class="flex-c-m">
                                 <div class="flex-col-m">
@@ -67,14 +67,6 @@
                             <label for="conf-senha">Confirmar senha*</label>
                             <input class="inputCadastrar m-b-50 flex-col-m" type="password" name="conf-senha"
                                 placeholder="********" data-senha-conf>
-
-                                <label for="senha">Escolha uma senha*</label>
-                                <input class="inputCadastrar m-b-50 flex-col-m" type="password" name="senha"
-                                    placeholder="********" data-senha>
-
-                                <label for="conf-senha">Confirmar senha*</label>
-                                <input class="inputCadastrar m-b-50 flex-col-m" type="password" name="conf-senha"
-                                    placeholder="********" data-senha-conf>
 
                                 <div class="container-login100-form-btn">
                                     <button type="submit" class="login100-form-btn-cadastra" onclick="validaCadastro()">
