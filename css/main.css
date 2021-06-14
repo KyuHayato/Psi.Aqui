@@ -293,6 +293,12 @@ iframe {
 .teste{
   width: 10% !important;
 }
+.inputTT{
+  padding: 10px;
+  border: solid 5px gray;
+  background: white;
+
+}
 
 /*------------------------------------------------------------------
 [ Focus ]*/
@@ -371,7 +377,12 @@ iframe {
   justify-content: center;
   padding-top: 20px;
 }
-
+.floatImagemPsi{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
 .login100-form-btn {
   font-family: Montserrat-Bold;
   font-size: 15px;
