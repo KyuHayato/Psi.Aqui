@@ -30,22 +30,22 @@
 					</span>
 
 					<div class="wrap-input100 validate-input">
-						<input class="input100" type="text" name="email" placeholder="Email" onchange="validaEmailLogin(this)">
+						<input class="input100" type="text" name="email" placeholder="Email" onchange="validaEmailLogin(this)" onblur="validaEmailLogin(this)">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
-						<span style="color: red; display: none" id="mensagemErro">Email invalido</span>
-						<span style="color: red; display: none" id="mensagemErro2">Insira um email valido, campo vazio</span>
+						
+						<span style="color: red; display: none" id="mensagemErro" class="fs-12">Insira um email valido</span>
 					</div>
 
 					<div id="te" class="wrap-input100" data-validate="Senha é obrigatório">
-						<input class="input100" type="password" name="pass" placeholder="Senha" onchange="validaSenhaLogin(this)">
+						<input class="input100" type="password" name="pass" placeholder="Senha" onchange="validaSenhaLogin(this)" onblur="validaSenhaLogin(this)">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
+							<i class="fa fa-lock fa-fw" aria-hidden="true"></i>
 						</span>
-						<span style="color: red; display: none;" id="mensagemErro3">Campo obrigatório</span>
+						<span style="color: red; display: none;" id="mensagemErro3" class="fs-10">Campo obrigatório</span>
 
 					</div>
 

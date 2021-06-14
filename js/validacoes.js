@@ -69,11 +69,11 @@ function validaEmailLogin(email){
 
     }
     if (email.value == '') {
-        document.querySelector("#mensagemErro2").style.display = "block"
+        document.querySelector("#mensagemErro").style.display = "block"
         email.focus();
         return false;
     }  else{
-        document.querySelector("#mensagemErro2").style.display = "none"
+        document.querySelector("#mensagemErro").style.display = "none"
     }
 }
 function validaSenhaLogin(senha){
