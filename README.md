@@ -1,12 +1,9 @@
 # Psi.aqui
 
 ### Equipe: 
-- [Eduardo Barbosa da Silva](https://github.com/?)
 - [Ewerson Alves](https://github.com/KyuHayato)
-- [João Victor Ferreira Woolley](https://github.com/?)
-- [Renato César Leal do Nascimento](https://github.com/?)
-- [Thamires Azevedo](https://github.com/?)
-- [Vinícius Ferreira Lira](https://github.com/?)
+- [Thamires Azevedo](https://github.com/thamiiaz)
+
 
 
 ## Visão geral
